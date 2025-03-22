@@ -1,0 +1,6 @@
+train: Pothole_dataset/train
+val: Pothole_dataset/val
+test: Pothole_dataset/test
+
+nc: 1
+names: ["pothole"]
