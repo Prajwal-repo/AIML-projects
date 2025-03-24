@@ -1,6 +1,7 @@
-train: Pothole_dataset/train
-val: Pothole_dataset/val
-test: Pothole_dataset/test
+train: C:/Users/Prajwal/OneDrive/Desktop/AIML-Projects/Pothole Detection using opencv and yolo/Pothole_dataset/train/images
+val: C:/Users/Prajwal/OneDrive/Desktop/AIML-Projects/Pothole Detection using opencv and yolo/Pothole_dataset/val/images
+test: C:/Users/Prajwal/OneDrive/Desktop/AIML-Projects/Pothole Detection using opencv and yolo/Pothole_dataset/test/images
 
-nc: 1
+nc: 1  # Number of classes (1 for pothole)
 names: ["pothole"]
+

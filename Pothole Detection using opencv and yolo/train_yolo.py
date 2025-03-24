@@ -1,15 +1,13 @@
 from ultralytics import YOLO
 
-model = YOLO("yolov8n.pt") 
+if __name__ == "__main__":  
+    model = YOLO("yolov8n.pt")  
 
-# Train the model
-model.train(
-    data="data1.yaml",  
-    epochs=1,        
-    imgsz=640,         
-    batch=8,           
-    device="cuda"      
-)
+    model.train(
+        data="C:/Users/Prajwal/OneDrive/Desktop/AIML-Projects/Pothole Detection using opencv and yolo/data1.yaml",
+        epochs=5,
+        imgsz=640,
+        batch=8,
+        device="cpu"
+    )
 
-# Save best model
-print("✅ Training complete! Model saved at: runs/detect/train/weights/best.pt")
