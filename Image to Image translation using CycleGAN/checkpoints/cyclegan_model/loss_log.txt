@@ -1,0 +1,5 @@
+================ Training Loss (Tue Mar 25 14:56:50 2025) ================
+================ Training Loss (Tue Mar 25 14:59:29 2025) ================
+(epoch: 1, iters: 100, time: 1.590, data: 17.858) D_A: 0.234 G_A: 0.266 cycle_A: 2.286 idt_A: 1.778 D_B: 0.229 G_B: 0.288 cycle_B: 3.803 idt_B: 1.041 
+(epoch: 1, iters: 200, time: 1.613, data: 0.001) D_A: 0.369 G_A: 0.404 cycle_A: 3.347 idt_A: 0.945 D_B: 0.319 G_B: 0.322 cycle_B: 2.542 idt_B: 1.516 
+(epoch: 1, iters: 300, time: 1.622, data: 0.001) D_A: 0.229 G_A: 0.419 cycle_A: 3.433 idt_A: 1.456 D_B: 0.225 G_B: 0.198 cycle_B: 2.969 idt_B: 1.548 
