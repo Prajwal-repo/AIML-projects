@@ -1,0 +1,23 @@
+2025-03-26 13:58:27,918 INFO    MainThread:5108 [wandb_setup.py:_flush():67] Current SDK version is 0.19.8
+2025-03-26 13:58:27,918 INFO    MainThread:5108 [wandb_setup.py:_flush():67] Configure stats pid to 5108
+2025-03-26 13:58:27,918 INFO    MainThread:5108 [wandb_setup.py:_flush():67] Loading settings from C:\Users\Prajwal\.config\wandb\settings
+2025-03-26 13:58:27,918 INFO    MainThread:5108 [wandb_setup.py:_flush():67] Loading settings from C:\Users\Prajwal\OneDrive\Desktop\AIML-Projects\Image to Image translation using CycleGAN\wandb\settings
+2025-03-26 13:58:27,918 INFO    MainThread:5108 [wandb_setup.py:_flush():67] Loading settings from environment variables
+2025-03-26 13:58:27,918 INFO    MainThread:5108 [wandb_init.py:setup_run_log_directory():647] Logging user logs to C:\Users\Prajwal\OneDrive\Desktop\AIML-Projects\Image to Image translation using CycleGAN\wandb\offline-run-20250326_135827-k2pmd6un\logs\debug.log
+2025-03-26 13:58:27,919 INFO    MainThread:5108 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to C:\Users\Prajwal\OneDrive\Desktop\AIML-Projects\Image to Image translation using CycleGAN\wandb\offline-run-20250326_135827-k2pmd6un\logs\debug-internal.log
+2025-03-26 13:58:27,919 INFO    MainThread:5108 [wandb_init.py:init():761] calling init triggers
+2025-03-26 13:58:27,919 INFO    MainThread:5108 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'dataroot': './Dataset', 'name': 'cyclegan_model', 'gpu_ids': [0], 'checkpoints_dir': './checkpoints', 'model': 'cycle_gan', 'input_nc': 3, 'output_nc': 3, 'ngf': 64, 'ndf': 64, 'netD': 'basic', 'netG': 'resnet_9blocks', 'n_layers_D': 3, 'norm': 'instance', 'init_type': 'normal', 'init_gain': 0.02, 'no_dropout': True, 'dataset_mode': 'unaligned', 'direction': 'AtoB', 'serial_batches': False, 'num_threads': 4, 'batch_size': 1, 'load_size': 286, 'crop_size': 256, 'max_dataset_size': inf, 'preprocess': 'resize_and_crop', 'no_flip': False, 'display_winsize': 256, 'epoch': 'latest', 'load_iter': 0, 'verbose': False, 'suffix': '', 'use_wandb': True, 'wandb_project_name': 'CycleGAN-and-pix2pix', 'display_freq': 400, 'display_ncols': 4, 'display_id': 0, 'display_server': 'http://localhost', 'display_env': 'main', 'display_port': 8097, 'update_html_freq': 1000, 'print_freq': 100, 'no_html': False, 'save_latest_freq': 5000, 'save_epoch_freq': 5, 'save_by_iter': False, 'continue_train': False, 'epoch_count': 1, 'phase': 'train', 'n_epochs': 50, 'n_epochs_decay': 100, 'beta1': 0.5, 'lr': 0.0002, 'gan_mode': 'lsgan', 'pool_size': 50, 'lr_policy': 'linear', 'lr_decay_iters': 50, 'lambda_A': 10.0, 'lambda_B': 10.0, 'lambda_identity': 0.5, 'isTrain': True, '_wandb': {}}
+2025-03-26 13:58:27,919 INFO    MainThread:5108 [wandb_init.py:init():784] starting backend
+2025-03-26 13:58:27,919 INFO    MainThread:5108 [wandb_init.py:init():788] sending inform_init request
+2025-03-26 13:58:27,957 INFO    MainThread:5108 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=spawn, using: spawn
+2025-03-26 13:58:27,957 INFO    MainThread:5108 [wandb_init.py:init():798] backend started and connected
+2025-03-26 13:58:27,959 INFO    MainThread:5108 [wandb_init.py:init():891] updated telemetry
+2025-03-26 13:58:27,995 INFO    MainThread:5108 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-03-26 13:58:31,128 INFO    MainThread:5108 [wandb_init.py:init():990] starting run threads in backend
+2025-03-26 13:58:31,868 INFO    MainThread:5108 [wandb_run.py:_console_start():2375] atexit reg
+2025-03-26 13:58:31,868 INFO    MainThread:5108 [wandb_run.py:_redirect():2227] redirect: wrap_raw
+2025-03-26 13:58:31,868 INFO    MainThread:5108 [wandb_run.py:_redirect():2292] Wrapping output streams.
+2025-03-26 13:58:31,868 INFO    MainThread:5108 [wandb_run.py:_redirect():2315] Redirects installed.
+2025-03-26 13:58:31,873 INFO    MainThread:5108 [wandb_init.py:init():1032] run started, returning control to user process
+2025-03-26 14:26:15,660 INFO    MsgRouterThr:5108 [mailbox.py:close():129] Closing mailbox, abandoning 0 handles.

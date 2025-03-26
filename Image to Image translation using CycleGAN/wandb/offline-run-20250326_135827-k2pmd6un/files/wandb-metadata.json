@@ -1,0 +1,54 @@
+{
+  "os":  "Windows-11-10.0.26100-SP0",
+  "python":  "CPython 3.13.2",
+  "startedAt":  "2025-03-26T08:28:27.958114Z",
+  "args":  [
+    "--dataroot",
+    "./Dataset",
+    "--name",
+    "cyclegan_model",
+    "--model",
+    "cycle_gan",
+    "--display_id",
+    "0",
+    "--n_epochs",
+    "50",
+    "--use_wandb"
+  ],
+  "program":  "C:\\Users\\Prajwal\\OneDrive\\Desktop\\AIML-Projects\\Image to Image translation using CycleGAN\\train.py",
+  "codePath":  "Image to Image translation using CycleGAN\\train.py",
+  "git":  {
+    "remote":  "https://github.com/Prajwal-repo/AIML-projects.git",
+    "commit":  "862570764fcabdee7e65c0b4d8e5c61849179232"
+  },
+  "root":  "C:\\Users\\Prajwal\\OneDrive\\Desktop\\AIML-Projects\\Image to Image translation using CycleGAN",
+  "host":  "LAPTOP-JFQPHLDB",
+  "executable":  "C:\\Users\\Prajwal\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+  "codePathLocal":  "train.py",
+  "cpu_count":  4,
+  "cpu_count_logical":  8,
+  "gpu":  "NVIDIA GeForce GTX 1650",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "254721126400",
+      "used":  "211725672448"
+    }
+  },
+  "memory":  {
+    "total":  "8451309568"
+  },
+  "cpu":  {
+    "count":  4,
+    "countLogical":  8
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA GeForce GTX 1650",
+      "memoryTotal":  "4294967296",
+      "cudaCores":  896,
+      "architecture":  "Turing"
+    }
+  ],
+  "cudaVersion":  "12.8"
+}
