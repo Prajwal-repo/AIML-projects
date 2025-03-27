@@ -3,12 +3,14 @@ import torch
 from torchvision import transforms
 from PIL import Image
 import os
+from models.networks import define_G
 
 @st.cache_resource
 def load_model(model_path):
-    model = torch.jit.load(model_path, map_location=torch.device('cpu'))
-    model.eval()
-    return model
+    netG = define_G(input_nc=3, output_nc=3, ngf=64, netG='resnet_9blocks',norm='instance', init_type='normal', init_gain=0.02)
+    netG.load_state_dict(torch.load(model_path, map_location=torch.device('cpu')))
+    netG.eval()
+    return netG
 
 def transform_image(image):
     transform = transforms.Compose([
@@ -35,7 +37,7 @@ if uploaded_file is not None:
     st.image(image, caption="Uploaded Image", use_column_width=True)
     st.write("Processing...")
 
-    model_path = "./checkpoints/cyclegan_model/latest_net_G.pth"
+    model_path = "C:/Users/Prajwal/OneDrive/Desktop/AIML-Projects/Image to Image translation using CycleGAN/checkpoints/cyclegan_model/latest_net_G_B.pth"
     if not os.path.exists(model_path):
         st.error("Model file not found! Please check the path.")
     else:
