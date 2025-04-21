@@ -10,6 +10,7 @@ def chunk_audio_tensor(waveform, sample_rate, chunk_duration_ms):
     return [waveform[:, i:i+chunk_size] for i in range(0, waveform.size(1), chunk_size)]
 
 def transcribe_in_chunks(audio_path, chunk_duration_ms=30000):
+    torchaudio.set_audio_backend("soundfile")
     waveform, sample_rate = torchaudio.load(audio_path)
     chunks = chunk_audio_tensor(waveform, sample_rate, chunk_duration_ms)
     
