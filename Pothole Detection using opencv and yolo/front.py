@@ -22,5 +22,4 @@ if st.button("Process with YOLO"):
     if uploaded_file is not None:
         image_2=Image.open(uploaded_file)
         result_image_2 =  yolo_detect.detect_potholes(image_2)
-        result_image_2 = cv2.cvtColor(result_image_2, cv2.COLOR_RGB2BGR) 
         st.image(result_image_2,caption="Detected Potholes",use_column_width=True)

@@ -9,12 +9,20 @@ Welcome to my collection of Artificial Intelligence and Machine Learning project
 
 | Project Name | Description | Link |
 |--------------|-------------|------|
-| Pothole Detection using YOLO | Object detection model to detect potholes from images | [View Project](./Pothole-Detection-YOLO/README.md) |
-| Stock Price Predictor | Predicts stock prices using linear regression | [View Project](./Stock-Prediction/README.md) |
-| Resume Generator with GPT | AI-powered tool to generate professional resumes | [View Project](./Resume-Generator-GPT/README.md) |
-| Twitter Sentiment Analysis | Analyzes tweet sentiments using LSTM | [View Project](./Twitter-Sentiment-LSTM/README.md) |
-| Image Translation using CycleGAN | Converts images from one domain to another (e.g., horses to zebras) | [View Project](./Image-Translation-CycleGAN/README.md) |
-| RAG Chatbot with Vector Search | Chatbot with document retrieval and vector embedding | [View Project](./RAG-Chatbot/README.md) |
+| Titanic Survival Prediction | Models on Titanic Dataset | [View Project](./Titanic%20Survival%20Prediction/Readme.md) |
+| House Price Prediction | Predicts house  prices using Regression Models| [View Project](./House%20Price%20Prediction/Readme.md) |
+| Spam Email Classifier | Analyzing email dataset with NLP basics| [View Project](.//Spam%20Email%20Classifier/Readme.md) |
+
+| Handwritten Digit Recognition | Used CNN model to analyze MNIST dataset | [View Project](./Handwritten%20Digit%20Recognition/Readme.md) |
+| Twitter Sentiment Analysis | Analyzes tweet sentiments using LSTM | [View Project](./Sentiment%20Analysis%20on%20twitter%20data/Readme.md) |
+| Pothole Detection using YOLO and opencv | Object detection model to detect potholes from images | [View Project](./Pothole%20Detection%20using%20opencv%20and%20yolo/Readme.md) |
+
+| Image to Image Translation using CycleGAN | Converts images from one domain to another (e.g., horses to zebras) | [View Project](./Image%20to%20Image%20translation%20using%20CycleGAN/Readme.md) |
+| AI Powered Resume Generator with GPT | AI-powered tool to generate professional resumes | [View Project](./AI%20powered%20Resume%20Generator%20(GPT%20%20Based)/Readme.md) |
+| Style Transfer Using Deep Learning | Modifying Image to a different style | [View Project](./Style%20Transfer%20using%20deep%20learning/Readme.md)
+| Fine Tune Chatbot using Llama3 | Fine tuning chatbot with Llama3 model | [View Project](./Fine%20tuning%20chatbot%20using%20Llama3/Readme.md) |
+
+| Real Time AI Video Summarization | Analyzing and summarizing the video | [View Project](.//Real%20Time%20AI%20Video%20Summarization/Readme.md)  
 
 > 📌 Each folder contains its own README with detailed information.
 
