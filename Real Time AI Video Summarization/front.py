@@ -14,6 +14,26 @@ mode = st.selectbox("Choose summarization mode:", ["abstractive", "extractive"])
 
 asr_pipeline = transformers.pipeline("automatic-speech-recognition", model="openai/whisper-small")
 
+def create_timelapse(input_path, output_path, speed=4):
+    try:
+        (
+            ffmpeg
+            .input(input_path)
+            .output(
+                output_path,
+                vf=f"setpts=PTS/{speed}",
+                af=f"atempo={min(speed, 2)}",  # atempo max = 2.0, stack if needed
+                vcodec="libx264",
+                acodec="aac"
+            )
+            .overwrite_output()
+            .run(capture_stdout=True, capture_stderr=True)
+        )
+    except ffmpeg.Error as e:
+        print("FFmpeg Timelapse error:", e.stderr.decode())
+        raise e
+
+
 def trim_video_ffmpeg(input_path, output_path, start_time, duration):
     try:
         (
@@ -86,12 +106,16 @@ if video_file:
     with open("temp_video.mp4", "wb") as f:
         f.write(video_file.read())
 
-    st.video("temp_video.mp4")
     start_btn = st.button("▶️ Start Real-Time Transcription")
 
     if start_btn:
         with st.spinner("Transcribing as the video plays..."):
             transcript, summary = stream_transcription_while_video_plays("temp_video.mp4", mode)
+            timelapse_path = "temp/timelapse.mp4"
+            create_timelapse("temp_video.mp4", timelapse_path, speed=4)
+
+        st.subheader("🎞️ Timelapse Preview (4x Speed)")
+        st.video(timelapse_path)
 
         st.subheader("🧾 Full Transcript")
         st.text_area("Transcript", transcript, height=300)
