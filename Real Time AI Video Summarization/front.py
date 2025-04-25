@@ -6,6 +6,7 @@ import ffmpeg
 import os
 import time
 import torchaudio
+import sentiment
 
 st.title("🎬 Real-Time AI Video Summarizer")
 
@@ -90,10 +91,17 @@ def stream_transcription_while_video_plays(video_path, mode):
 
         # Summarize
         chunk_summary = Summarizer.summarize_text(chunk_transcript, mode)
-        summary_sections.append(f"[{start}s - {end}s]: {chunk_summary}")
+        base_label, score = sentiment.analyze_sentiment(chunk_transcript)
+        motiv_label, emoji = sentiment.map_to_label(base_label, score, chunk_transcript)
+
+        summary_sections.append(
+        f"[{start}s - {end}s]: {chunk_summary} (🧠 Sentiment: {motiv_label} {emoji}, score: {score})"
+)
 
         with st.expander(f"📌 Summary for {start}s to {end}s"):
             st.write(chunk_summary)
+            st.markdown(f"**🧠 Tone:** {emoji} `{motiv_label}` — confidence `{score}`")
+
 
         os.remove(video_chunk)
         os.remove(audio_chunk)
